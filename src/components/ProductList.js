@@ -38,7 +38,8 @@ componentDidMount=()=>{
 
   getProducts(products){
     if(count!=0){
-    return (products.length? (
+    return products.length? (
+      
       products.map(product => {
               return(
                    <div class="col-sm-6 col-md-4">
@@ -48,7 +49,13 @@ componentDidMount=()=>{
       })
       
     ):(<div></div>)
-    }else { return (<h3>There is no product</h3>)}
+    }
+    else
+     {
+        return(
+          <h3>There is no product</h3>
+          )
+        }
   }
 
   onPageChanged = data => {

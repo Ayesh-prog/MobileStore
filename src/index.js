@@ -11,7 +11,7 @@ import rootReducer from './reducers/rootReducer';
 import { createBrowserHistory } from 'history' 
 
 
-const history = createBrowserHistory()
+// const history = createBrowserHistory()
 const loadState = () => {
     try {
       const serializedState = localStorage.getItem('state');
@@ -43,7 +43,7 @@ store.subscribe(() => {
     saveState(store.getState());
   });
   
-ReactDOM.render(<BrowserRouter history={history}><Provider store= {store}><App/></Provider></BrowserRouter>, document.getElementById('root'));
+ReactDOM.render(<BrowserRouter ><Provider store= {store}><App/></Provider></BrowserRouter>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

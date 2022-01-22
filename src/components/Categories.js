@@ -50,7 +50,7 @@ render() {
             </div>
       </div>
       
-      <div className="well blosd">
+      {/* <div className="well blosd">
                 <h3 className="lead"> 
                     Quick Shop 
                 </h3>
@@ -69,7 +69,7 @@ render() {
                         </button>
                     </span>
                 </div>
-            </div>
+            </div> */}
       </div>
     )
   }
